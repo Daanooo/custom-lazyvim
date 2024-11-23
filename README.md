@@ -1,4 +1,6 @@
-# 💤 LazyVim
+# Custom LazyVim config
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+## Lazygit
+For the best experience, make sure Lazygit is installed, see [Lazygit repository](https://github.com/jesseduffield/lazygit)
+- To open Lazygit: `<leader>gg`
+- To close Lazygit: `<C-/`
