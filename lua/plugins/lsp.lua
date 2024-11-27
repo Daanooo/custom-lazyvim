@@ -8,8 +8,11 @@ return {
 
         phpactor = {
           init_options = {
-            ["language_server_phpstan.enabled"] = true,
+            ["indexer.include_patterns"] = { "app/", "vendor/" },
           },
+          root_dir = function(fname)
+            return require("lspconfig.util").root_pattern("composer.json", ".git")(fname) or vim.loop.os_homedir()
+          end,
         },
 
         lua_ls = {},
