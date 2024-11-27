@@ -5,6 +5,11 @@ return {
     opts = {
       servers = {
         gopls = {},
+        phpactor = {
+          init_options = {
+            ["language_server_phpstan.enabled"] = true,
+          },
+        },
       },
     },
   },
@@ -15,6 +20,8 @@ return {
     opts = {
       ensure_installed = {
         "go",
+        "php",
+        "phpdoc",
       },
     },
   },
