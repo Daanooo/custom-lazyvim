@@ -5,16 +5,6 @@ return {
     opts = {
       servers = {
         gopls = {},
-
-        phpactor = {
-          init_options = {
-            ["indexer.include_patterns"] = { "app/", "vendor/" },
-          },
-          root_dir = function(fname)
-            return require("lspconfig.util").root_pattern("composer.json", ".git")(fname) or vim.loop.os_homedir()
-          end,
-        },
-
         lua_ls = {},
       },
     },
@@ -26,8 +16,6 @@ return {
     opts = {
       ensure_installed = {
         "go",
-        "php",
-        "phpdoc",
         "lua",
       },
     },
